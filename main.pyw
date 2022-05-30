@@ -61,7 +61,7 @@ egg_counter_lavel.place(x=150, y=550)
 
     # Create Chicken Button
 
-chicken_button = ttk.Button(raiz, command=sumar_huevo_contador)
+chicken_button = tkinter.Button(raiz, command=sumar_huevo_contador, borderwidth=0)
 chicken_button.place(x=375, y=125)
 chicken_button.config(image=chicken_img_final)
 
