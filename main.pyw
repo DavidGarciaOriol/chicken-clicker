@@ -1,9 +1,7 @@
-from ctypes import resize
 from tkinter import *
 from tkinter import messagebox
-import tkinter
-from tkinter import ttk
-from PIL import ImageTk, Image
+
+
 
 # # # ______________________________
 # Tkinter Init & Variables
@@ -11,7 +9,7 @@ from PIL import ImageTk, Image
 raiz = Tk()
 raiz.resizable(False, False)
 
-    # Add Frame
+    # Add Menu
 
 menu_superior = Menu(raiz)
 raiz.config(menu=menu_superior, width=900, height=600)
@@ -67,24 +65,19 @@ def sumar_tortilla_contador():
 
     # Add Chicken Image
 
-chicken_img = Image.open("src\\img\\main_chicken.png")
-chicken_img_final = ImageTk.PhotoImage(chicken_img)
-
-chicken_label = tkinter.Label(raiz, image=chicken_img_final)
+chicken_img= PhotoImage(file="src\\img\\main_chicken.png")
+chicken_label = Label(raiz, image=chicken_img)
 
     # Add Create Chicken Button
 
-chicken_button = tkinter.Button(raiz, command=lambda:sumar_huevo_contador(raiz.poder_del_click), borderwidth=0)
-
+chicken_button = Button(raiz, command=lambda:sumar_huevo_contador(raiz.poder_del_click), borderwidth=0)
+chicken_button.config(image=chicken_img)
 chicken_button.place(x=375, y=125)
-chicken_button.config(image=chicken_img_final)
 
     # Add Egg Image
 
-egg_img = Image.open("src\\img\\egg_to_add.png")
-egg_img_final = ImageTk.PhotoImage(egg_img)
-
-egg_label = Label(raiz, image=egg_img_final)
+egg_img = PhotoImage(file="src\\img\\egg_to_add.png")
+egg_label = Label(raiz, image=egg_img)
 egg_label.place(x=75, y=450)
 
     # Add Egg Counter
@@ -94,15 +87,13 @@ egg_counter_label.place(x=150, y=525)
 
     # Create Tortilla Button
 
-tortilla_button = tkinter.Button(raiz, text="Hacer Tortilla (5)", command=sumar_tortilla_contador)
+tortilla_button = Button(raiz, text="Hacer Tortilla (5)", command=sumar_tortilla_contador)
 tortilla_button.place(x=300, y=350)
 
     # Add Tortilla Image
 
-tortilla_img = Image.open("src\\img\\tortilla.png")
-tortilla_img_final = ImageTk.PhotoImage(tortilla_img)
-
-tortilla_label = tkinter.Label(raiz, image=tortilla_img_final)
+tortilla_img = PhotoImage(file="src\\img\\tortilla.png")
+tortilla_label = Label(raiz, image=tortilla_img)
 tortilla_label.place(x=225, y=450)
 
     # Add Tortilla Counter
