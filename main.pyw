@@ -1,8 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
 
-
-
 # # # ______________________________
 # Tkinter Init & Variables
 
@@ -85,7 +83,7 @@ egg_label.place(x=75, y=450)
 egg_counter_label = Label(raiz, text= f" x {raiz.contador_huevos}")
 egg_counter_label.place(x=150, y=525)
 
-    # Create Tortilla Button
+    # Add Create Tortilla Button
 
 tortilla_button = Button(raiz, text="Hacer Tortilla (5)", command=sumar_tortilla_contador)
 tortilla_button.place(x=300, y=350)
