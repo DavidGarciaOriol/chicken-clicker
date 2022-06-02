@@ -7,6 +7,10 @@ from tkinter import messagebox
     # Inicializador Tkinter
 
 raiz = Tk()
+
+    # Configuración Raíz
+
+raiz.geometry("1280x720")
 raiz.resizable(False, False)
 
     # Variables del Juego
@@ -119,83 +123,83 @@ chicken_img= PhotoImage(file="src\\img\\main_chicken.png")
 
 chicken_button = Button(raiz, command=lambda:sumar_huevo_contador(raiz.poder_del_click), borderwidth=0)
 chicken_button.config(image=chicken_img)
-chicken_button.place(x=375, y=125)
+chicken_button.place(x=565, y=125)
 
     # Agregar Imagen Huevo
 
 egg_img = PhotoImage(file="src\\img\\egg_to_add.png")
 egg_label = Label(raiz, image=egg_img)
-egg_label.place(x=75, y=450)
+egg_label.place(x=50, y=50)
 
     # Agregar Contador Huevo
 
 egg_counter_label = Label(raiz, text= "", font="arial")
-egg_counter_label.place(x=150, y=525)
+egg_counter_label.place(x=90, y=80)
 
     # Agregar Imagen Tortilla
 
 tortilla_img = PhotoImage(file="src\\img\\tortilla.png")
 tortilla_label = Label(raiz, image=tortilla_img)
-tortilla_label.place(x=225, y=450)
+tortilla_label.place(x=50, y=120)
 
     # Agregar Botón Crear Tortilla
 
 tortilla_button = Button(raiz, text="Hacer Tortilla (5 Huevos)", command=lambda:sumar_tortilla_contador(raiz.poder_de_cocina))
-tortilla_button.place(x=250, y=310)
+tortilla_button.place(x=740, y=180)
 
     # Agregar Contador Tortilla
 
 tortilla_counter_label = Label(raiz, text="", font="arial")
-tortilla_counter_label.place(x=300, y=525)
+tortilla_counter_label.place(x=90, y=150)
 
     # Agregar Imagen Trigo
 
 trigo_img = PhotoImage(file="src\\img\\el_trigo.png")
 trigo_label = Label(raiz, image=trigo_img)
-trigo_label.place(x=375, y=450)
+trigo_label.place(x=50, y=190)
 
     # Agregar Botón Trigo
 
 trigo_button = Button(raiz, command=lambda:sumar_trigo_contador(raiz.poder_del_click), borderwidth=0)
 trigo_button.config(image=trigo_img)
-trigo_button.place(x=675, y=75)
+trigo_button.place(x=700, y=50)
 
     # Agregar Contador Trigo
 
 trigo_counter_label = Label(raiz, text="", font="arial")
-trigo_counter_label.place(x=450, y=525)
+trigo_counter_label.place(x=100, y=220)
 
     # Agregar Imagen Pan
 
 pan_img = PhotoImage(file="src\\img\\pan.png")
 pan_label = Label(raiz, image=pan_img)
-pan_label.place(x=525, y=450)
+pan_label.place(x=50, y=260)
 
     # Agregar Botón Crear Pan
 
 pan_button = Button(raiz, text="Hacer Pan (3 Trigo)", command=lambda:sumar_pan_contador(raiz.poder_de_cocina))
-pan_button.place(x=250, y=340)
+pan_button.place(x=740, y=210)
 
     # Agregar Contador Pan
 
 pan_counter_label = Label(raiz, text="", font="arial")
-pan_counter_label.place(x=600, y=525)
+pan_counter_label.place(x=100, y=290)
 
     # Agregar Imagen Bocata Tortilla
 
 bocata_tortilla_img = PhotoImage(file="src\\img\\bocata_tortilla.png")
 bocata_tortilla_label = Label(raiz, image=bocata_tortilla_img)
-bocata_tortilla_label.place(x=675, y=450)
+bocata_tortilla_label.place(x=50, y=330)
 
     # Agregar Botón Crear Bocata Tortilla
 
 bocata_tortilla_button = Button(raiz, text="Hacer Bocata Tortilla (2 Tortillas / 1 Pan)", command=lambda:sumar_bocata_tortilla_contador(raiz.poder_de_cocina))
-bocata_tortilla_button.place(x=250, y=370)
+bocata_tortilla_button.place(x=740, y=240)
 
     # Agregar Contador Bocata Tortilla
 
 bocata_tortilla_counter_label = Label(raiz, text="", font="arial")
-bocata_tortilla_counter_label.place(x=750, y=525)
+bocata_tortilla_counter_label.place(x=90, y=360)
 
 
 # # # ______________________________
@@ -204,7 +208,7 @@ bocata_tortilla_counter_label.place(x=750, y=525)
     # Agregar Menú Superior
 
 menu_superior = Menu(raiz)
-raiz.config(menu=menu_superior, width=900, height=600)
+raiz.config(menu=menu_superior)
 
     # Agregar Menú Principal
 
