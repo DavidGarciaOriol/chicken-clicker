@@ -1,4 +1,3 @@
-from cgitb import grey
 from tkinter import *
 from tkinter import messagebox
 
@@ -55,7 +54,7 @@ def restar_huevo_contador(value:int):
         raiz.contador_huevos -= value
         egg_counter_label.config(text= f" x {raiz.contador_huevos}")
 
-    # manejo Contador Trigo
+    # Manejo Contador Trigo
 
 def sumar_trigo_contador(value:int):
     raiz.contador_trigo += value
