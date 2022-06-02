@@ -6,5 +6,14 @@ Clickas la gallina y suelta huevos, esa es la base de todo. Añadiré algunas au
 ## HOW TO RUN
 Simplemente ejecuta main.pyw y saltará la ventana con el proto-juego.
 
-## EDIT 1:
-Ahora se puede clickar la gallina y acumula huevos. Los huevos son feos, pero es lo que hay de momento.
+## EDIT 1
+Ahora se puede clickar la gallina y acumula huevos. Los huevos son feos, pero es lo que hay de m
+ - Gallina
+ - Huevos
+ - Tortilla
+ - Trigo
+ - Pan
+ - ¡¡¡BOCATA DE TORTILLA!!!
+
+No es la lista de la compra (aunque...), es lo que tiene el juego.
+Ahora a trabajar en los scripts que manejen estas cosas de formas un poco más chulas ;)
