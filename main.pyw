@@ -117,7 +117,7 @@ def restar_bocata_tortilla_contador(value:int):
 
     # Agregar Imagen Gallina
 
-chicken_img= PhotoImage(file="src\\img\\main_chicken.png")
+chicken_img= PhotoImage(file="res\\img\\main_chicken.png")
 
     # Agregar Botón Gallina
 
@@ -127,7 +127,7 @@ chicken_button.place(x=565, y=125)
 
     # Agregar Imagen Huevo
 
-egg_img = PhotoImage(file="src\\img\\egg_to_add.png")
+egg_img = PhotoImage(file="res\\img\\egg_to_add.png")
 egg_label = Label(raiz, image=egg_img)
 egg_label.place(x=50, y=50)
 
@@ -138,7 +138,7 @@ egg_counter_label.place(x=90, y=80)
 
     # Agregar Imagen Tortilla
 
-tortilla_img = PhotoImage(file="src\\img\\tortilla.png")
+tortilla_img = PhotoImage(file="res\\img\\tortilla.png")
 tortilla_label = Label(raiz, image=tortilla_img)
 tortilla_label.place(x=50, y=120)
 
@@ -154,7 +154,7 @@ tortilla_counter_label.place(x=90, y=150)
 
     # Agregar Imagen Trigo
 
-trigo_img = PhotoImage(file="src\\img\\el_trigo.png")
+trigo_img = PhotoImage(file="res\\img\\el_trigo.png")
 trigo_label = Label(raiz, image=trigo_img)
 trigo_label.place(x=50, y=190)
 
@@ -171,7 +171,7 @@ trigo_counter_label.place(x=100, y=220)
 
     # Agregar Imagen Pan
 
-pan_img = PhotoImage(file="src\\img\\pan.png")
+pan_img = PhotoImage(file="res\\img\\pan.png")
 pan_label = Label(raiz, image=pan_img)
 pan_label.place(x=50, y=260)
 
@@ -187,7 +187,7 @@ pan_counter_label.place(x=100, y=290)
 
     # Agregar Imagen Bocata Tortilla
 
-bocata_tortilla_img = PhotoImage(file="src\\img\\bocata_tortilla.png")
+bocata_tortilla_img = PhotoImage(file="res\\img\\bocata_tortilla.png")
 bocata_tortilla_label = Label(raiz, image=bocata_tortilla_img)
 bocata_tortilla_label.place(x=50, y=330)
 
